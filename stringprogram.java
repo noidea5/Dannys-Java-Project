@@ -8,15 +8,15 @@ public class stringprogram {
 		String[] sentenceArray = sentences.split("\\. ");
 		//separates the inputed string for each period and space
 		String finalOutput = "";
+		//The individual sentence components will be added to this string in the subsequent for loop
 		for (int x = 0; x < sentenceArray.length; x++) {
 			finalOutput += sentenceArray[x].substring(0, 1).toUpperCase() + sentenceArray[x].substring(1).toLowerCase();
+			//each section has the first letter capitalized, and the rest lower-cased.
 			if (x != sentenceArray.length-1) 
 				finalOutput += ". ";
 			//since the period and space are removed, they must be added in (except for the last sentence, since it is not split)
 		}
-		//System.out.println(sentences);
 		String newString = sentences.substring(0, 1).toUpperCase() + sentences.substring(1);
-		//System.out.println(newString);
 		System.out.println(finalOutput);
 	}
 
