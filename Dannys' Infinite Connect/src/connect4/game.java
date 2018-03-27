@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class game {
-	//make constructor for a game
 	static int[][] grid = new int[9][9];
 	static int inARowLength = 3;
 	//this int can be changed by the user, depending on how many they want to be needed in a row to win the game
